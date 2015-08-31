@@ -1,0 +1,286 @@
+
+body {
+    font-family: "Microsoft YaHei",Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+
+.br20{
+    border-radius: 20px;
+}
+.br10{
+    border-radius: 10px;
+}
+.bbr20{
+    border-radius: 0 0 20px 20px;
+}
+
+.fz06{
+    font-size: 0.6em;
+}
+
+.fz08{
+    font-size: 0.8em;
+}
+
+.fz{
+    font-size: 1em;
+}
+
+.mgr20{
+    margin-right: 20px;
+}
+.mgr50{
+    margin-right: 50px;
+}
+
+.mgr80{
+    margin-right: 80px;
+}
+
+.mgr120{
+    margin-right: 120px;
+}
+
+.pdt10{
+    padding-top: 10px;
+}
+
+.pdt20{
+    padding-top: 20px;
+}
+
+
+header {
+    -moz-box-align: center;
+    background: none repeat scroll 0 0 hsl(32, 54%, 44%);
+    display: -moz-box;
+    height: 37px;
+    width: 100%;
+}
+#logo {
+    background-image: url("./images/logo.png");
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    height: 25px;
+    margin-left: 220px;
+    margin-top: -7px;
+    top: 10px;
+    width: 150px;
+}
+nav {
+    display: block;
+    margin-left: 85px;
+    width: 450px;
+}
+nav ul li {
+    display: inline;
+    margin-right: 40px;
+    cursor: pointer;
+    color: black;
+}
+#container {
+    display: -moz-box;
+    margin: 10px 0 0 198px;
+}
+
+#left_bar {
+    border-right: 1px solid  hsl(311, 16%, 81%);
+}
+#left_bar h1 {
+    display: block;
+    font-size: 101%;
+    font-weight: normal;
+
+}
+#left_bar p {
+    border-top: 1px solid hsl(311, 16%, 81%);
+    display: block;
+    margin-right: 10px;
+    padding-top: 10px; 
+    width: 195px;
+}
+#middle {
+    display: block;
+    height: 393px;
+    width: 489px ;
+}
+#action {
+    background: none repeat scroll 0 0 hsl(108, 38%, 85%);
+    display: block;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    width: 446px;
+}
+
+
+#action form{
+/*display: none;*/
+}
+.comment {
+    height: 45px;
+    width: 370px;
+}
+#middle {
+    margin: 10px;
+}
+#action{
+    display: none;
+    text-align: center;
+    padding-bottom: 20px;
+}
+#action p {
+    display: block;
+    margin: 0;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+}
+#action span {
+    display: inline-block;
+    margin-right: 40px;
+    background-color: hsla(108, 10%, 50%,.5);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 30px;
+
+}
+
+
+#reconders{
+
+    width: 484px;
+}
+.reconder {
+    background: none repeat scroll 0 0 hsl(140, 24%, 93%);
+    border: 1px solid hsl(108, 24%, 79%);
+    height: auto;
+    margin: 10px;
+
+    text-align: center;
+}
+
+
+.reconder span {
+    display: inline-block;
+}
+
+
+
+.reconder p {
+    border: 1px solid hsl(108, 24%, 79%);
+    margin: 10px 20px 10px 20px;
+    padding: 12px;
+    text-align: left;
+}
+#right_bar {
+    border: 1px solid hsl(217, 50%, 90%);
+    font-size: 90%;
+    height: auto;
+    text-align: left;
+    width: 240px;
+}
+
+#right_bar p {
+    border-bottom: 1px solid hsla(230, 79%, 80%, 0.5);
+    margin : 0;
+    text-align: center;
+    
+}
+
+#right_bar p span:first-child {
+    font-size: 1.2em;
+    font-weight: bold;
+    display: inline-block;
+    padding: 20px  0;
+}
+
+#right_bar p span:nth-child(2){
+    
+    display: none;
+    float: right;
+    padding-right: 12px;
+    border-left:  1px solid hsl(217, 50%, 90%);
+    border-bottom:  1px solid hsl(217, 50%, 90%);
+    padding : 5px 8px;
+    font-size: 1.1em;
+    background-color: hsl(217, 30%, 90%);
+    cursor: pointer;
+}
+
+.addtag{
+    
+    display: none;
+    /* float: right;*/
+    /* margin: -66px -108px 0 0;*/
+    padding: 21px  20px 11px;
+    /*background-color: hsla(65, 31%, 77%,.8);*/
+    z-index: 500;
+    text-align: center;
+}
+
+.addtag input[value = "取消"]{
+    margin-left: 24px;
+
+}
+
+#right_bar_tag span {
+    border: 1px solid hsla(230, 79%, 80%, 0.5);
+    display: inline-block;
+    cursor: pointer;
+    margin: 0.5em;
+    padding: 5px;
+}
+
+
+/*
+ * 这里开始编辑标签页
+ */
+
+#edittag{
+    font-size: 1.2em;
+    margin-left: 235px;
+    margin-top : 10px;
+    margin-right: 438px;
+}
+
+#edittag p{
+    border:1px solid hsl(108, 24%, 79%);
+    width: 850px;
+}
+
+#edittag p span{
+    display: inline-block;
+}
+
+#edittag p span:nth-child(1){
+    width: 600px;
+}
+#edittag p span:nth-child(2){
+    margin-right: 28px;
+    cursor: pointer;
+}
+#edittag p span:nth-child(3){
+    margin-right: 28px;
+    cursor: pointer;
+}
+#edittag p span:nth-child(4){
+    margin-right: 28px;
+    cursor: pointer;
+}
+
+

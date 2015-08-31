@@ -1,0 +1,291 @@
+/* 这是每个页面不相同的CSS设置 */
+/* 公共的一些设置 */
+.edit_option span,.count_stop,.tagList_tagname{
+    cursor: pointer;  		/*手势*/
+}
+
+
+/* index 页面 */
+.index_container{
+    border-top: 2px solid gray;
+    height:auto;
+    margin-top: -5px;
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+    width: 100%;
+    /* background-color: hsl(33,14%,85%); */
+    float:left;
+    padding: 20px 20px;/* 为了使容器内的两个块　显得不太贴近本容器 */
+}
+
+.index_logo{
+    margin-left: 30px;
+}
+
+.main_info{
+    width: 400px;
+    margin-top: 15px;
+    padding:0 10px;
+    float:left;
+    
+}
+.main_info .headline{
+    margin-top: 22px;
+    font-size: 1.1em;
+    font-weight: bold;
+/* margin-left: 20px; */ /*如果距离太过　反而不好看   */
+
+}
+
+.linian{
+    margin-left: 30px;
+    padding: 10px;
+    border: 1px dashed gray;
+}
+
+.load_and_register{
+    width: 240px;
+    float:right;
+    margin: 20px;
+    border: 1px solid gray;
+    padding:20px;
+}
+
+.load_tip ,.register_tip{
+    font-weight:bold;
+}
+
+.load_tip{
+    margin: 5px;
+}
+
+.register_tip{
+    margin: 20px 5px 5px 5px;
+}
+
+.load_and_register span{
+    margin: 8px 5px;
+    display: inline-block;
+}
+.load_form{
+    
+}
+
+
+/* index 页面结束 */
+/* main 页面设置 */
+.main_container{ 		/*这是页面容器*/
+    padding: 3%;
+    width: 94%;
+    background-color: hsl(33,14%,85%); 
+    float:left;
+}
+.count_reconder{		/*左边栏*/
+    width: 450px;
+    display: inline-block;
+    padding: 10px 30px 10px 10px;
+    border-right: 1px dashed  grey;
+}
+.count {			/*计数器*/
+    margin:0 0 20px ;
+    background-color: hsl(0,0%,80%);
+}
+
+.count_buttom{
+
+    padding: 10px 10px 10px 35px;
+}
+.count_buttom span{
+    display: inline-block; 	/*解决行内元素撑出父边框*/
+    font-size: 1.2em;
+    font-weight: bold;
+    border : 1px solid gray;
+    padding: 10px;
+    background-color:  hsl(0, 0%, 87%); 
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+
+.count_buttom .count_stop{
+    background-color: hsl(20,31%,58%);
+
+
+}
+.count_comment{			/*计数器的备注textarea*/
+    border: 1px solid hsl(0, 0%, 87%);
+    overflow-y: hidden ;
+    display: block;
+    margin: 12px auto;		/*设置宽度，居中处理*/
+    width: 325px;
+    height: 37px;
+}
+
+.reconder_zone{
+    float: left;
+    padding: 20px 0;
+    width: 100%;
+
+}
+
+.a_reconder{
+    margin-top: 5px;
+    border-top: 1px solid gray;
+    width: 100%;
+    padding: 15px 5px; 		/*每条记录 内容不要太挤了*/
+
+}
+
+.a_reconder em{
+    font-style: normal;
+    font-weight: bold;
+    background: none repeat scroll 0 0 hsl(120, 5%, 72%);
+    padding: 2px 30px;		/*设置太大 会挤破页面*/
+}
+
+
+.select_tag_zone{ 		/*右边栏*/
+    display:inline-block;
+    width: 235px;
+    float: right;
+}
+
+.add_tag_form{ 			/*表单*/
+    margin : 10px 0 ;
+    padding: 20px 0;
+    border-bottom: 1px dashed gray;
+
+}
+
+.tag_list_zone{  		/*标签列表区域*/
+    margin: 5px;
+    padding : 5px;
+}
+
+.click_tag_info{
+    background-color: hsl(0,10%,70%);
+    padding : 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    
+
+}
+.tagList_tagname{		/*每个标签的设置*/
+    padding: 5px 4px;
+    margin: 10px 2px;
+    display:inline-block;
+    border: 1px solid gray;
+
+}
+
+.tagList_tagname:hover{		/*每个标签的设置*/
+    background-color: gray;
+
+}
+/* main 页面设置结束 */
+
+
+/* edittag 页面设置 */
+.edittag_container{ 		/*这是本页面的容器*/
+    height:100%;
+    width: 100%;
+}
+.edittag_container .add_tag_form { /*添加标签的样式*/
+    position: relative; 
+
+    float:left;
+    margin: 11px 40px;
+
+}
+
+.edit_a_tag{
+    display:block;
+    position: relative;
+    float:left; 		/*为调层级*/
+    clear: both;
+    background-color: hsl(60,4%,90%);
+    border-bottom: 1px solid hsl(114, 93%, 23%);
+    
+    margin: 10px 18px;
+    padding: 3px;
+    width: 757px; 		/*设定宽度*/
+}
+
+.edittag_tagName{
+    display:block;
+    position: relative;
+    margin-top: -6.5px;    	/*垂直居中*/
+    top: 10.5px;                /*垂直居中*/
+    float:left;			/*向左浮动*/
+    padding:0 3px;
+    
+
+}
+
+.edit_option{
+
+    display: block;
+    width :273px;
+    float:right;
+
+}
+.edittag_delete_zone{ 		/*删除确认区域*/
+    border: 1px solid gray;
+    width : 130px;
+    padding: 10px;
+    position: relative;
+    float: right;
+
+
+    margin: -122px -40px 0 0;
+
+
+    margin: -100px\9 -40px\9 0 0; /*IE 6-9 都支持的写法，其它的不支持*/
+
+    display: none;
+    background-color: hsl(0,0%,90%);
+
+}
+
+.delete_dialog_info{
+    line-height: 19px;
+
+}
+
+.edittag_delete_zone .delete_dialog span{ /*确定，取消设置的公共部分*/
+    border: 1px solid gray;
+    display:inline-block;
+    padding : 2px;
+    width: 26px;
+    
+}
+
+.continue_delete{
+    margin: 10px 10px 0 20px;
+}
+.cancel_delete{
+    margin: 10px 10px 0 10px;
+}
+
+
+/* edittag 页面设置结束 */
+
+/* 时间统计页面设置 */
+.statistic_headline{
+    margin:5px 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+
+}
+
+/* 时间统计页面设置结束 */
+
+
+
+/*user set 页面  */
+.userset{
+    margin: 10px;
+}
+
+/*user set 页面结束  */

@@ -1,0 +1,122 @@
+﻿/* 这是几个页面共有的CSS设置 */
+
+
+html, body {
+    height:100%;
+    background-color: hsl(0,0%,94%)
+}
+
+hr{
+    margin: 0;
+    border-top-width: 3px;
+}
+/* 包装器，设置盒模型 */
+.wrap{
+    width: 800px;
+    margin:0px auto;    /* 使包装器居中 */
+    height: 100%;
+}
+
+.header{
+    height: 98px;
+    clear:both;
+    background-color: hsl(0,0%,95%);
+}
+
+.logo{
+    background-image:url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: 130px;
+    height: 50px;
+    margin-bottom: 3px;
+    margin: 10px 5px  5px;
+
+}
+
+.logout{
+    position: relative;
+    float:right;
+    top: 25px;
+    margin-top: -8.5px;
+    margin-right: 40px;
+    border: 1px solid teal;
+    padding: 2px;
+    cursor: pointer;
+}
+.nav {
+    float : left;
+    width: 100%;
+}
+
+
+ul{
+    margin: 0;
+    position: relative;
+    display: block;
+    float : left;
+    margin-left: 125px;
+}
+
+.nav li{
+    margin-top: -4px;
+    margin-left: 20px;
+    float :left;
+    padding: 12px 3px 5px;
+    font-size : 1.3em;
+    font-weight: bold;
+}
+
+
+
+
+.nav a:hover {
+    text-decoration: none;
+
+}
+
+.nav li:hover{
+
+    background: hsl(0,0%,25%);
+}
+
+.nav a{
+    color:hsl(0,0%,10%);
+
+}
+
+.container{	/*这是主要内容区，与header ,footer平级*/
+    height:auto;
+    margin-top:20px;
+    float: left;
+    width: 100%;
+    margin-bottom: 40px;
+    width: 100%;
+    background-color: hsl(0,0%,90%);
+    float:left;
+}
+
+/* footer 设置 */
+.footer{
+    height: 4em;
+    margin: auto;
+    clear: both;
+    border-top: 2px solid red;
+}
+
+.copyright_contact {
+    margin-top: 10px  ;
+    float:left;
+    width: 300px;
+}
+
+.copyright_contact span{
+    margin-left: 30px;
+    display: block;
+    float:left;
+}
+
+.footer_email{
+    float:left;
+    margin-top: 4px;
+
+}

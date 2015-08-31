@@ -1,0 +1,59 @@
+<div class= 'main_container'>
+  <div class='count_reconder cols'> <!-- start count_reconder -->
+    <div class="count" >
+      <div class= 'count_buttom'>
+	<span class="count_tag">准备就绪</span>
+	<span class="count_total">00:00</span>
+	<span class="count_ready">心静如水</span>
+      </div>
+
+      <form>
+	<textarea type="text" class="count_comment" name="comment" placeholder="备注"></textarea> </br>
+      </form>
+
+    </div>
+
+
+    <div class="reconder_zone" >
+      {loop="reconders"}
+      <div class="a_reconder">
+	<p class='tag_total'>
+	  <span class="reconder_tag" >标签：<em class= 'tagName_em'>{$value.tagName}</em></span>
+	  <span class="reconder_total">时间合计：<em>{$value.totalTime}</em></span>
+	</p>
+	
+	<p class='start_end'>
+	  <span class= "reconder_start_time"  >开始：<em>{$value.stime}</em></span>
+	  <span class= "reconder_end_time" >结束：{$value.etime}</span>
+	</p>
+
+	<p class= 'reconder_com_p'>
+	  <span class="reconder_comment">{$value.comment}</span>
+	</p>
+
+      </div>
+      {/loop}
+
+    </div>
+  </div> <!-- end of count_reconder -->
+
+  <div  class="select_tag_zone cols">
+
+    <p class="select_tag_zone_tile">
+      <form class="add_tag_form">
+	<input type="text" class="add_tagName" name ="tagName">
+	<button value="确定" class="select_tag_zone_enter">添加标签</button>
+      </form>
+    </p>
+    <div class = "tag_list_zone">
+      <p class= 'click_tag_info' >点击下列标签开始计时</P>
+      {loop="tagList"}
+      {if="$value.visible == 1 "} <span class="tagList_tagname ">{$value.tagList}</span>{/if}
+      {/loop}
+    </div>
+  </div>
+
+</div>
+
+<!--计数器的js-->
+<script src="./js/count.js"></script>
